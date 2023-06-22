@@ -12,4 +12,10 @@ public class SolutionTest extends TestCase {
         Assert.assertEquals(432, res);
     }
 
+    public void testZigZag() {
+        String s = "PAYPALISHIRING";
+        String res = new ZigZagConversion().convert(s, 4);
+        Assert.assertEquals("PINALSIGYAHRPI", res);
+    }
+
 }
